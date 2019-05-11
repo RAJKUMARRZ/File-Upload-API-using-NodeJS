@@ -1,0 +1,22 @@
+{
+  "name": "file_upload_api",
+  "version": "1.0.1",
+  "description": "A Node API which uploads file to the server. This can also be modified to upload only selective file formats only (as now this is accepting only images, i.e. jpg, png etc.).",
+  "main": "server.js",
+  "start": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+  "type": "git",
+  "url": ""
+  },
+  "author": "Raj Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "multer": "^1.4.1",
+    "path": "^0.12.7"
+  }
+}
