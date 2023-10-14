@@ -20,15 +20,15 @@ var upload = multer({
   }
 }).single('image');
 
-function checkFileType(file, cb){
+function checkFileType(file, callBack){
   var filetypes = /jpeg|jpg|png|gif/;
   var extname = filetypes.test(path.extname(file.originalname).toLowerCase());
   var mimetype = filetypes.test(file.mimetype);
 
   if(mimetype && extname){
-    return cb(null,true);
+    return callBack(null,true);
   } else {
-    cb('Error: Images Only!');
+    callBack('Error: Images Only!');
   }
 }
 
